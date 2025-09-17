@@ -1,0 +1,62 @@
+-- seed.sql (sample data)
+INSERT INTO RECIPES (Name, Cuisine_Type, Cooking_Time, Difficulty_Level) VALUES
+('Grilled Cheese','American',15,2),
+('Spaghetti and Meatballs','Italian',30,3),
+('Strawberry Crepe','French',15,4),
+('Vegetable Egg Fried Rice','Asian',20,3),
+('Moong Dal','Indian',35,4);
+
+-- INSTRUCTIONS
+INSERT INTO INSTRUCTIONS (RecipeID, Step_Number, Description) VALUES
+(101,1,'Gather bread, cheese, and butter.'),
+(101,2,'Butter the pan and place bread to absorb butter.'),
+(101,3,'Flip bread; add cheese slices.'),
+(101,4,'Cook until golden; assemble and serve.'),
+(102,1,'Salt water and bring to rolling boil.'),
+(102,2,'Cook spaghetti until al dente; stir.'),
+(102,3,'Form and season meatballs; simmer in sauce.'),
+(102,4,'Combine pasta and meatballs with sauce.'),
+(103,1,'Whisk flour, eggs, milk, water, vanilla, salt.'),
+(103,2,'Lightly butter pan; pour thin batter layer.'),
+(103,3,'Flip when edges lift; repeat.'),
+(103,4,'Top with sliced strawberries and honey.'),
+(104,1,'Sauté mixed vegetables; season.'),
+(104,2,'Scramble eggs in center.'),
+(104,3,'Add day-old rice; stir-fry.'),
+(104,4,'Finish with soy sauce; serve.'),
+(105,1,'Boil lentils with salt and turmeric.'),
+(105,2,'Temper oil with cumin, ginger, chilies, curry leaves, onions, tomatoes.'),
+(105,3,'Add spices; sauté.'),
+(105,4,'Combine lentils and tempering; simmer.');
+
+-- INGREDIENTS
+INSERT INTO INGREDIENTS (RecipeID, Name, Quantity, Unit, Special_Notes) VALUES
+(101,'Cheese',2,'slice','Good melting cheese'),
+(101,'Bread',2,'slice',NULL),
+(101,'Butter',14,'g',NULL),
+(102,'Spaghetti pasta',454,'g','~1 lb'),
+(102,'Ground meat',907,'g','Beef/Pork/Veal'),
+(102,'Egg',1,'each',''),
+(102,'Garlic',4,'clove','Minced'),
+(102,'Parmesan',80,'g',''),
+(102,'Yellow Onion',80,'g',''),
+(102,'Basil',2,'tbsp',''),
+(102,'Crushed tomatoes',1560,'g','~56 oz'),
+(103,'Strawberries',150,'g','Sliced'),
+(103,'Honey',2,'tbsp',''),
+(103,'Butter',3,'tbsp',''),
+(103,'Flour',125,'g',''),
+(103,'Whole Milk',185,'g',''),
+(103,'Eggs',2,'each','Room temp'),
+(103,'Vanilla extract',1.5,'tsp',''),
+(104,'Mixed Vegetables',2,'cup','Frozen'),
+(104,'Rice',4,'cup','Day-old'),
+(104,'Eggs',4,'each','Beaten'),
+(104,'Soy sauce',65,'ml',''),
+(105,'Moong Dal Lentils',2,'cup',''),
+(105,'Cumin',1,'tsp',''),
+(105,'Ginger',1,'tbsp','Chopped'),
+(105,'Green Chili',2,'each','Seeds increase heat'),
+(105,'Curry Leaves',6,'each',''),
+(105,'Onion',1,'each','To taste'),
+(105,'Tomatoes',130,'g','Chopped');
