@@ -1,2 +1,2 @@
 # CookBook-Database
-Relational database project for DS220 using SQL Server. Designed normalized tables for recipes, ingredients, and instructions with PK/FK and cascades. Includes schema, sample data, and queries for cuisines, cooking times, and recipe complexity.
+A relational database project developed in DS220 (Data Management) to model, store, and analyze recipes, ingredients, and cooking instructions. Built in SQL Server with normalized schema design, PK/FK constraints, cascading deletes, and indexes. Includes table creation scripts, sample data, and analytic queries to explore cuisines, cooking times, ingredient counts, and recipe complexity.
